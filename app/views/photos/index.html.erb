@@ -36,6 +36,34 @@
       <% end %>
     </div>
     </table>
+
+    <div class="media-body">
+                  <form action="/create_comment" method="post">
+                    <!-- Hidden input for authenticity token to protect from forgery -->
+                    <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
+
+                    <!-- Label and input for body -->
+                    <div class="form-group">
+                      <label for="body" class="sr-only">
+                        Body
+                      </label>
+
+                      <div class="input-group">
+                        <input type="text" id="body" name="body" class="form-control" placeholder="Add a comment..." required>
+
+                        <span class="input-group-btn">
+                          <button class="btn btn-default" type="submit">
+                            <i class="fa fa-commenting-o"></i>
+                          </button>
+                        </span>
+                      </div><!-- /input-group -->
+                    </div>
+                  </form>
+                </div>
+
+  </div>
+</div>
+
     </div>
   </div>
 </div>
