@@ -56,7 +56,7 @@ Rails.application.routes.draw do
   devise_for :users
 
   get "/users", :controller => "users", :action => "index"
-  get "/users/<%= current_user.id %>", :controller => "users", :action => "show"
+  get "/users/1", :controller => "users", :action => "show"
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
