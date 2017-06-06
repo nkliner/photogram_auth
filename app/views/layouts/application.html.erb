@@ -50,7 +50,7 @@
 
         <ul class="nav navbar-nav navbar-right">
           <% if current_user != nil %>
-          <li><a href="/users/:id"><%= current_user.username %></a></li>
+          <li><a href="/users/<%= current_user.id %>"><%= current_user.username %></a></li>
           <% else %>
           <li>No User</li>
           <% end %>
