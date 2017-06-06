@@ -1,15 +1,15 @@
 <div class="page-header">
-  <h1>User #<%= @user.id %></h1>
+  <h1>User #<%= current_user.id %></h1>
 </div>
 
 <dl class="dl-horizontal">
   <dt>Photos</dt>
-  <dd><%= @user.photos %></dd>
+  <dd><%= current_user.photos %></dd>
 
   <dt>Comments</dt>
-  <dd><%= @user.comments %></dd>
+  <dd><%= current_user.comments %></dd>
 
   <dt>Likes</dt>
-  <dd><%= @user.likes %></dd>
+  <dd><%= current_user.likes %></dd>
 
 </dl>
