@@ -49,6 +49,13 @@
 
         <ul class="nav navbar-nav navbar-right">
           <% if current_user != nil %>
+          <% else %>
+          <li><a href="/users/:id">Current User</a></li>
+          <% end %>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <% if current_user != nil %>
           <li><a href="/users/edit"><%= current_user.username %></a></li>
           <li><a href="/users/sign_out" data-method="delete" rel="nofollow"><i class="fa fa-fw fa-sign-out"></i>Sign Out</a></li>
           <% else %>
