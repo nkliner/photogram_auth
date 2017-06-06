@@ -64,4 +64,8 @@ class LikesController < ApplicationController
       redirect_to(:back, :notice => "Like deleted.")
     end
   end
+
+  def list
+    render("likes/list.html.erb")
+  end
 end
